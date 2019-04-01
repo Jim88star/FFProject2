@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>Project #2</title>
 
@@ -15,31 +16,6 @@
 </head>
 
 <body>
-
-  <!-- Nav Bar -->
-  <!-- <nav>
-    <div id="nav-background">
-      <img id="logo" src="logo.png" alt="">
-      <ul id="nav-selections">
-        <li class="dropdown nav-item">
-          <button>Jump to...</button>
-        </li>
-        <li class="nav-item">
-          <a href="#">HELLO</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">Explore</a>
-        </li>
-        <li>
-          <div>
-            <i class="fas fa-caret-down"></i>
-            <img id="married" src="married.jpg" alt="">
-
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
 
   <nav>
     <div id="nav-background">
@@ -54,93 +30,209 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#">HELLO</a>
+          <a href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#">Explore</a>
+          <a href="#">Music</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Info</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Credits</a>
         </li>
         <li>
-          <div class="block-hover">
-            <i class="fas fa-caret-down"></i>
+          <i class="fas fa-bell"></i>
+          <div class="block-hover1">
+            <p class="plus">+</p>
+            <i id="carat1" class="fas fa-caret-down"></i>
+          </div>
+          <div class="block-hover2">
             <img id="married" src="married.jpg" alt="">
+            <i id="carat2" class="fas fa-caret-down"></i>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
           </div>
         </li>
       </ul>
     </div>
   </nav>
 
+  <!-- <div class="main"> -->
 
-  <!-- Main title section -->
-  <header>
-    <h1>My Favorite Book</h1>
-  </header>
 
-  <hr>
 
-  <main>
 
-    <!-- Main content section -->
-    <h2><em>Our Wedding</em></h2>
-    <section>
-      <p><em>Our Wedding</em> is a book depicting our wedding day and the events leading up to that special day.</p>
-    </section>
 
-    <hr>
 
-    <!-- Table section -->
-    <!-- Events and associated music -->
-    <h2>Music</h2>
-    <table>
-      <tr>
-        <th>Event</th>
-        <th>Music Sample</th>
-      </tr>
-      <tr>
-        <td>Grooms Dinner</td>
-        <td>Classical Gas by Mason Williams</td>
-      </tr>
-      <tr>
-        <td>Wedding</td>
-        <td>Halleluia by Leonard Cohen</td>
-      </tr>
-    </table>
+  <div class="flex-container-main">
+    <div class="sect1">
+      <!-- <p>section #1</p> -->
+      <!-- Main title section -->
+      <div class="sect1header">
+        <label class="sect1label" for="fname">Chapters</label>
+        <button class="sect1button"><i class="fas fa-book-open"></i> Find</button>
+      </div>
+      <div><input class="sect1input" type="text" id="fname" name="firstname" placeholder="Find a chapter..."></div>
+      <div class="sect1chap">
+        <ol>
+          <li><i class="fas fa-book-open"></i><a href="#">The Proposal</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Engagement Photos</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Invitations</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Wedding Dress</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Photos</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Ceremony</a></li><br>
+          <li><i class="fas fa-book-open"></i><a href="#">Reception</a></li><br>
+        </ol>
+      </div>
+      <div class="sect1post">
+        <p>Show more</p>
+      </div>
+    </div>
 
-    <hr>
-    <!-- Form section -->
-    <!-- Request Honeymoon details -->
-    <h2>Request Honeymoon details here:</h2>
-    <form>
-      <fieldset>
-        <legend>Your Information:</legend>
-        First Name:
-        <br>
-        <input type="text">
-        <br><br>
-        Last Name:
-        <br>
-        <input type="text">
-        <br><br>
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
-    <br>
-    <hr>
 
-    <!-- Aside section -->
-    <!-- Book credits -->
-    <aside>
-      <h2>Credits:</h2>
-      <p>The content for <em>Our Wedding</em> was arranged by my wife and I online via a service provided by
-        Shutterfly, Inc.</p>
-    </aside>
-    <hr>
+    <div class="flex-container-sub">
 
-  </main>
-  <!-- footer section -->
-  <!-- Author and copyright -->
-  <footer>
-    <p>Site by: Jim Gardner &copy 2019</p>
-  </footer>
+      <div class="sect2">
+        <!-- <p>section #2</p> -->
+        <!-- Main content section -->
+
+        <div class="sect2closer">
+
+
+          <div class="sect2closer-icon">
+            <svg width="26" height="26">
+              <circle cx="13" cy="13" r="13" stroke="rgb(180, 180, 180)" stroke-width="1" fill-opacity="0" />
+              <line x1="9" y1="9" x2="17" y2="17" stroke="rgb(30, 30, 30)" stroke-width="2" />
+              <line x1="9" y1="17" x2="17" y2="9" stroke="rgb(30, 30, 30)" stroke-width="2" />
+            </svg>
+          </div>
+
+          <!-- Sorry, your browser does not support inline SVG.
+               </svg> -->
+
+        </div>
+        <div class="sect2content">
+          <h2 class="sect2header">View <em>Our Wedding</em> in any browser from our website!</h2>
+          <section class="sect2section">
+            <p><em>Our Wedding</em> is a book depicting our wedding day and the events leading up to that special day.
+            </p>
+          </section>
+          <div class="sect2buttons">
+            <button class="button1">Read the intro</button>
+            <button class="button2">Read the book</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate sect1 for small device responsiveness -->
+      <div class="sect1-dup-header">
+        <div class="sect1header">
+          <label class="sect1label" for="fname">Chapters</label>
+        </div>
+      </div>
+
+      <div class="sect1-dup">
+        <!-- <p>section #1</p> -->
+        <!-- Main title section -->
+        <!-- <div class="sect1header">
+            <label class="sect1label" for="fname">Chapters</label>
+            <button class="sect1button"><i class="fas fa-book-open"></i> Find</button>
+          </div> -->
+        <div><input class="sect1input" type="text" id="fname" name="firstname" placeholder="Find a chapter..."></div>
+        <div class="sect1chap">
+          <ol>
+            <li><i class="fas fa-book-open"></i><a href="#">The Proposal</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Engagement Photos</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Invitations</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Wedding Dress</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Photos</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Ceremony</a></li><br>
+            <li><i class="fas fa-book-open"></i><a href="#">Reception</a></li><br>
+          </ol>
+        </div>
+        <div class="sect1post">
+          <p>Show more</p>
+        </div>
+      </div>
+
+      <div class="sect3">
+        <!-- <p>section #3</p> -->
+        <!-- Table section -->
+        <!-- Events and associated music -->
+        <p class="sect3header">
+          Discover the music and musicians we selected for our wedding events.
+        </p>
+        <p class="sect3section">
+          Find a listing of all the song<a href="#"> selections </a>and musician <a href="#"> biographies </a>here.
+        </p>
+        <table>
+          <tr>
+            <th>Event</th>
+            <th>Music Sample</th>
+          </tr>
+          <tr>
+            <td>Grooms Dinner</td>
+            <td class="sample">Classical Gas by Mason Williams</td>
+          </tr>
+          <tr>
+            <td>Wedding</td>
+            <td class="sample">Halleluia by Leonard Cohen</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="sect4">
+        <!-- <p>section #4</p> -->
+        <!-- Form section -->
+        <!-- Request Honeymoon details -->
+        <div class="sect4container">
+          <div class="sect4header">
+            <img id="logo" src="logo.png" alt="">
+            <p class="sect4copy">&copy 2019 Jim Gardner</p>
+          </div>
+
+
+          <div class="sect4form">
+            <h2>Request Honeymoon details here:</h2>
+            <form>
+              <fieldset>
+                <legend>Your Information:</legend>
+                First Name:
+                <br>
+                <input type="text">
+                <br>
+                Last Name:
+                <br>
+                <input type="text">
+                <br><br>
+
+
+              </fieldset>
+            </form>
+          </div>
+          <div class="sect4input-button">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sect5">
+      <!-- <p>section #5</p> -->
+      <!-- Aside section -->
+      <!-- Book credits -->
+      <aside>
+        <h2>Credits:</h2>
+        <p>The content for <em>Our Wedding</em> was arranged by my wife and I online via a service provided by
+          Shutterfly, Inc.</p>
+      </aside>
+    </div>
+
+
+  </div>
+  <!-- </div> -->
+
 </body>
 
 </html>
