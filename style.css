@@ -257,8 +257,6 @@
    /* End of nav bar */
 
    .sect1 {
-     /* display: none; */
-     /* width: 23%; */
      height: 800px;
      padding: 32px 24px;
      margin: 0 8px 0 0;
@@ -431,7 +429,6 @@
 
    .sect1-dup {
      display: none;
-     /* margin */
      border-style: solid;
      border-width: 1px;
      border-color: rgb(222, 226, 230);
@@ -499,7 +496,6 @@
    }
 
    .sect4 {
-     /* margin */
      border: none;
      background-color: transparent;
      padding: 10px;
@@ -571,9 +567,6 @@
    }
 
    .sect5 {
-     /* display: none; */
-     /* display: flex; */
-     /* width: 30%; */
      margin: 20px 10px;
      border: none;
      background-color: transparent;
@@ -590,53 +583,53 @@
      font-weight: 600;
    }
 
+   /* media response */
+
    .flex-container-main {
      display: flex;
-     width: 1450px;
+     width: 99%;
      position: relative;
      bottom: 60px;
    }
 
    .sect1 {
-     width: 25%;
+     width: 43%;
    }
 
    .flex-container-sub {
-     /* width: 30%; */
+     width: 100%;
      display: flex;
      flex-direction: column;
    }
 
    .sect5 {
-     width: 26%;
+     width: 46%;
    }
 
    @media (max-width: 1012px) {
+     .flex-container-main {
+       position: absolute;
+       top: 60px;
+     }
      .sect5 {
        display: none;
      }
      .sect1 {
-       /* display: none; */
-       width: 36%;
-       margin: 0 8px 0 0;
-       border-right: 1px solid rgb(222, 226, 230);
-       background-color: rgb(255, 255, 255);
+       width: 43%;
      }
      .flex-container-sub {
-       width: 64%;
-       display: flex;
-       flex-direction: column;
-       margin: 0 0 0 30px;
+       width: 57%;
+       margin: 0 30px;
+     }
+     .sect4header {
+       display: none;
+       width: 0;
      }
    }
 
    @media (max-width:769px) {
      .sect1 {
        display: none;
-       width: 23%;
-       margin: 0 8px 0 0;
-       border-right: 1px solid rgb(222, 226, 230);
-       background-color: rgb(255, 255, 255);
      }
      .sect1-dup-header {
        display: block;
@@ -655,7 +648,5 @@
      }
      .flex-container-sub {
        width: 100%;
-       display: flex;
-       flex-direction: column;
      }
    }
