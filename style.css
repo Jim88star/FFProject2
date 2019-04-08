@@ -1,12 +1,13 @@
    body {
      background-color: rgb(246, 248, 250);
+     /* background-color: red; */
      font-family: 'Open Sans', sans-serif;
    }
 
    #nav-background {
      background-color: rgb(36, 41, 46);
      width: 100%;
-     height: 56px;
+     height: 64px;
    }
 
    #logo {
@@ -17,6 +18,20 @@
 
    nav #logo:hover {
      cursor: pointer;
+   }
+
+   .hamburger {
+     font-size: 20px;
+     color: red;
+     color: white;
+     float: left;
+     padding: 25px 42px;
+     display: none;
+   }
+
+   .hamburger:hover {
+     cursor: pointer;
+     color: rgb(190, 191, 193);
    }
 
    #nav-selections {
@@ -36,7 +51,7 @@
      width: 300px;
      height: 28px;
      margin-right: 30px;
-     bottom: 44px;
+     bottom: 40px;
      border: none;
      border-radius: 4px;
      cursor: pointer;
@@ -49,7 +64,7 @@
      min-width: 400px;
      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
      z-index: 1;
-     top: -18px;
+     top: -12px;
    }
 
    .dropdown-content a {
@@ -183,58 +198,56 @@
      color: rgb(175, 175, 175);
    }
 
-   .hamburger {
-     font-size: 20px;
-     color: red;
-     color: rgb(190, 191, 193);
-     float: right;
-     position: relative;
-     bottom: 75px;
-     left: 138px;
-     display: none;
-   }
-
-   .hamburger:hover {
-     cursor: pointer;
-   }
-
-   @media (max-width: 1011px) {
+   @media (max-width: 1012px) {
      #nav-background {
-       height: 56px;
+       height: 68px;
      }
+
      #logo {
-       margin: 13px 40px;
+       position: relative;
+       left: 32%;
+       top: 6px;
      }
+
      .dropdown {
        display: none;
      }
+
      .nav-item {
        display: none;
      }
+
      .fa-bell {
-       bottom: 35px;
-       right: 80px;
+       bottom: 31px;
+       right: 35px;
      }
+
      .block-hover1 {
        display: none;
      }
+
      p.plus {
        display: none;
      }
+
      #carat1 {
        display: none;
      }
+
      .block-hover2 {
        display: none;
      }
+
      #married {
        display: none;
      }
+
      #carat2 {
        display: none;
      }
+
      .hamburger {
-       bottom: 38px;
+       bottom: 34px;
        left: -28px;
        display: contents;
        display: inline;
@@ -243,14 +256,17 @@
 
    @media (max-width: 543px) {
      #logo {
-       margin: 13px 20px;
+       left: 30%;
      }
+
      .fa-bell {
-       bottom: 35px;
-       right: 60px;
+       bottom: 32px;
+       right: 20px;
      }
+
      .hamburger {
-       left: -4px;
+       padding: 25px 16px;
+
      }
    }
 
@@ -340,7 +356,7 @@
    }
 
    .sect2 {
-     margin: 16px 8px 8px 8px;
+     margin: 23px 8px 8px 8px;
      border-style: solid;
      border-width: 1px;
      border-color: rgb(222, 226, 230);
@@ -567,7 +583,7 @@
    }
 
    .sect5 {
-     margin: 20px 10px;
+     margin: 40px 10px;
      border: none;
      background-color: transparent;
    }
@@ -587,40 +603,53 @@
 
    .flex-container-main {
      display: flex;
-     width: 99%;
+     width: 98%;
      position: relative;
      bottom: 60px;
    }
 
    .sect1 {
-     width: 43%;
+     width: 300px;
+     position: relative;
+     top: 8px;
    }
 
    .flex-container-sub {
-     width: 100%;
+     width: 50%;
      display: flex;
      flex-direction: column;
    }
 
    .sect5 {
-     width: 46%;
+     width: 22%;
+   }
+
+   @media(max-width:1417px) {
+     .sect1 {
+       width: 21%;
+     }
    }
 
    @media (max-width: 1012px) {
      .flex-container-main {
        position: absolute;
        top: 60px;
+       width: 100%;
      }
+
      .sect5 {
        display: none;
      }
+
      .sect1 {
-       width: 43%;
+       width: 32%;
      }
+
      .flex-container-sub {
-       width: 57%;
+       width: 68%;
        margin: 0 30px;
      }
+
      .sect4header {
        display: none;
        width: 0;
@@ -631,22 +660,32 @@
      .sect1 {
        display: none;
      }
+
      .sect1-dup-header {
        display: block;
        margin-top: 7px;
        padding: 10px;
      }
+
      .sect1-dup {
        display: block;
-       margin: 0px 8px 0 8px;
+       margin: 0px 8px;
        padding: 3px 9px 9px 9px;
-       border-style: solid;
-       border-width: 1px;
-       border-color: rgb(222, 226, 230);
-       border-radius: 3px;
-       background-color: rgb(255, 255, 255);
      }
+
      .flex-container-sub {
        width: 100%;
+     }
+   }
+
+   @media(max-width:543px) {
+     .flex-container-sub {
+       margin: 0 10px;
+     }
+   }
+
+   @media(max-width:448px) {
+     .flex-container-sub {
+       margin: 0;
      }
    }
